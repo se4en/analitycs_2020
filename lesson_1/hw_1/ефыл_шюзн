@@ -1,0 +1,7 @@
+import sys
+
+def safe_input():
+    try:
+        return input()
+    except EOFError:
+        sys.exit(0)
